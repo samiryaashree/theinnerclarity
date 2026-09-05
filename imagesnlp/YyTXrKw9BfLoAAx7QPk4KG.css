@@ -1,0 +1,24 @@
+@font-face {
+  font-family: 'MONTSTERATT NEW';
+  src: url(https://user.lpcontent.net/fonts/PRZtfMVCbn79KTBQnjGg73/YyTXrKw9BfLoAAx7QPk4KG/W28AyURjGmp87vERtiMP9K.woff2?time=1781864990) format('woff2'),
+       url(https://user.lpcontent.net/fonts/PRZtfMVCbn79KTBQnjGg73/YyTXrKw9BfLoAAx7QPk4KG/W28AyURjGmp87vERtiMP9K.woff?time=1781864990) format('woff');
+  font-weight: 400;
+  font-style: regular;
+}
+
+@font-face {
+  font-family: 'MONTSTERATT NEW';
+  src: url(https://user.lpcontent.net/fonts/PRZtfMVCbn79KTBQnjGg73/YyTXrKw9BfLoAAx7QPk4KG/Srf7BoGBCNBYgdCwCt35dG.woff2?time=1781864990) format('woff2'),
+       url(https://user.lpcontent.net/fonts/PRZtfMVCbn79KTBQnjGg73/YyTXrKw9BfLoAAx7QPk4KG/Srf7BoGBCNBYgdCwCt35dG.woff?time=1781864991) format('woff');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'MONTSTERATT NEW';
+  src: url(https://user.lpcontent.net/fonts/PRZtfMVCbn79KTBQnjGg73/YyTXrKw9BfLoAAx7QPk4KG/Z7MTT2aJiVdDmfZctB8cPV.woff2?time=1781864990) format('woff2'),
+       url(https://user.lpcontent.net/fonts/PRZtfMVCbn79KTBQnjGg73/YyTXrKw9BfLoAAx7QPk4KG/Z7MTT2aJiVdDmfZctB8cPV.woff?time=1781864990) format('woff');
+  font-weight: 700;
+  font-style: regular;
+}
+
