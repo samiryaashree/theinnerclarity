@@ -19,6 +19,16 @@ jobs:
         with:
           submodules: true
           lfs: false
+
+      - name: Check files before deployment
+        run: |
+              echo "Current directory:"
+              pwd
+              echo "Repository files:"
+              ls -la
+              echo "HTML files:"
+              find . -maxdepth 2 -type f -name "*.html" -print
+    
       - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
