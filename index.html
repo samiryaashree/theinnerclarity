@@ -5,6 +5,26 @@
     <!-- BUILT WITH LEADPAGES https://www.leadpages.com -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+<script>
+(function () {
+    const timezone = Intl.DateTimeFormat()
+        .resolvedOptions().timeZone;
+
+    const isIndia = [
+        "Asia/Kolkata",
+        "Asia/Calcutta"
+    ].includes(timezone);
+
+    // Redirect visitors whose timezone is not India
+    if (!isIndia) {
+        window.location.replace(
+            "https://theinnerbalancestudio.com/international/"
+        );
+    }
+})();
+</script>
+
     <title>The Inner Balance Studio</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
