@@ -6,6 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
+<script>
+(function () {
+    const timezone = Intl.DateTimeFormat()
+        .resolvedOptions().timeZone;
+
+    const isIndia = [
+        "Asia/Kolkata",
+        "Asia/Calcutta"
+    ].includes(timezone);
+
+    const targetDomain = isIndia
+        ? "brave-cliff-07bd12a10.4.azurestaticapps.net"
+        : "theinnerbalancestudio.com";
+
+    // Redirect only if visitor is on the wrong domain
+    if (window.location.hostname !== targetDomain) {
+        window.location.replace(
+            "https://" + targetDomain + "/"
+        );
+    }
+})();
+</script>
 
 
 
