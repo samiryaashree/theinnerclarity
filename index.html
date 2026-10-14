@@ -7,28 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
 
-<script>
-(function () {
-    const timezone = Intl.DateTimeFormat()
-        .resolvedOptions().timeZone;
 
-    const isIndia = [
-        "Asia/Kolkata",
-        "Asia/Calcutta"
-    ].includes(timezone);
-
-    const targetDomain = isIndia
-        ? "theinnerbalancestudio.in"
-        : "theinnerbalancestudio.com";
-
-    // Redirect only if visitor is on the wrong domain
-    if (window.location.hostname !== targetDomain) {
-        window.location.replace(
-            "https://" + targetDomain + "/"
-        );
-    }
-})();
-</script>
 
 
     <title>The Inner Balance Studio</title>
