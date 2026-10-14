@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
+
 <script>
 (function () {
     const timezone = Intl.DateTimeFormat()
@@ -16,14 +17,19 @@
         "Asia/Calcutta"
     ].includes(timezone);
 
-    // Redirect visitors whose timezone is not India
-    if (!isIndia) {
+    const targetDomain = isIndia
+        ? "theinnerbalancestudio.in"
+        : "theinnerbalancestudio.com";
+
+    // Redirect only if visitor is on the wrong domain
+    if (window.location.hostname !== targetDomain) {
         window.location.replace(
-            "https://theinnerbalancestudio.com/international/"
+            "https://" + targetDomain + "/"
         );
     }
 })();
 </script>
+
 
     <title>The Inner Balance Studio</title>
     <meta name="keywords" content="">
